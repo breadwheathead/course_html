@@ -1,5 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }
 
 .text {
@@ -8,9 +18,29 @@ body {
     color: #1F3F68;
 }
 
+.top__text {
+    width: 425px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
 .top_header {
+    width: 512px;
     font-size: 64px;
     color: #1F3F68;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 359px;
 }
 
 .contact_header {
@@ -28,6 +58,11 @@ body {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
 }
 
 .field {
@@ -48,3 +83,18 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
+.interested-to-work {
+    width: 495px;
+}
+
+.footer_header {
+    width: 340px;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
