@@ -18,8 +18,15 @@ body {
     color: #1F3F68;
 }
 
-.top__text {
-    width: 425px;
+.sub_heading {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.common_header {
+    font-size: 36px;
+    text-align: center;
 }
 
 .menu {
@@ -28,11 +35,19 @@ body {
     list-style-type: none;
 }
 
-.top_header {
+/* INDEX TOP */
+
+.top_heading {
     width: 512px;
     font-size: 64px;
     color: #1F3F68;
 }
+
+.top__text {
+    width: 425px;
+}
+
+/* INDEX CONTENT */
 
 .cards {
     display: flex;
@@ -43,24 +58,15 @@ body {
     width: 359px;
 }
 
-.contact_header {
+/* CONTACTS TOP */
+
+.contact_top__heading {
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
 
-.common_header {
-    font-size: 36px;
-    text-align: center;
-}
-
-.sub_header {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-}
-
-.content {
+.contact {
     display: flex;
     justify-content: center;
 }
@@ -71,6 +77,8 @@ body {
     border-radius: 10px;
     opacity: 0.4;
 }
+
+/* FOOTER */
 
 .btn_submit {
     background: #5A98D0;
@@ -88,7 +96,7 @@ body {
     width: 495px;
 }
 
-.footer_header {
+.footer__heading {
     width: 340px;
 }
 
@@ -97,4 +105,3 @@ body {
     justify-content: space-between;
     list-style-type: none;
 }
-
