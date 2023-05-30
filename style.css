@@ -25,7 +25,7 @@ a {
 
 .container {
     max-width: 1140px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -46,9 +46,14 @@ a {
     color: #1F3F68;
 }
 
-.common_header {
+.common_heading {
     font-size: 36px;
     text-align: center;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
 }
 
 .menu {
@@ -114,13 +119,99 @@ a {
 
 /* INDEX CONTENT */
 
+.main_content {
+    padding-top: 64px;
+    padding-bottom: 115px;
+}
+
 .cards {
     display: flex;
     justify-content: space-between;
+    margin: 64px 0;
 }
 
 .card {
     width: 359px;
+    min-height: 480px;
+    padding: 32px 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.card__img {
+    margin-bottom: 51px;
+    align-self: center;
+}
+
+.card__heading {
+    margin-bottom: 14px;
+
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.card__link {
+    margin-top: 30px;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    color: #5A98D0;
+    opacity: 1.0;
+}
+
+.our__text {
+    margin-top: 32px;
+    margin-bottom: 64px;
+
+    text-align: center;
+
+    color: #222222;
+    opacity: 1.0;
+}
+
+.project {
+    position: relative;
+}
+
+.project__text {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.project__text__bottom {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.project__second-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
 }
 
 /* CONTACTS TOP */
@@ -146,19 +237,18 @@ a {
 /* FOOTER */
 
 .footer {
-    background-color: grey;
+    background: #316099;
 }
 
-.btn_submit {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
+.footer__text {
     color: #FFFFFF;
-    text-transform: uppercase;
+}
+
+.footer__top {
+    padding-top: 91px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .interested-to-work {
@@ -167,10 +257,39 @@ a {
 
 .footer__heading {
     width: 340px;
+    margin-bottom: 32px;
+
+    text-align: left;    
 }
 
-.footer_info {
+.footer__link {
+    display: block;
+    padding: 15px 80px;
+
+    text-align: center;
+    letter-spacing: 0.04em;    
+    opacity: 1.0;
+
+    background: #5A98D0;
+}
+
+.footer__line {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__bottom {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer__info {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+}
+
+.rights {
+    margin-top: 64px;
+    opacity: 0.4;
 }
