@@ -24,14 +24,16 @@ a {
 }
 
 .container {
-    width: 1140px;
-    margin: 0 auto;
+    max-width: 1140px;
+    /* margin: 0 auto; */
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;   
+    line-height: 26px;
     letter-spacing: 0.05em;
 
     color: #1F3F68;
@@ -74,7 +76,8 @@ a {
     margin-top: 115px;
     background-image: url(img/bg.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 10%;
+    background-size: 50%;
 }
 
 .main_header__heading {
@@ -98,7 +101,7 @@ a {
 .main_header__link {
     display: inline-block;
     padding: 15px 50px;
-    
+
     text-align: center;
     letter-spacing: 0.04em;
     opacity: 1;
