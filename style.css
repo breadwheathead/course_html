@@ -72,6 +72,7 @@ a {
     height: 768px;
     padding-top: 39px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+
 }
 
 .main_header__column {
@@ -236,15 +237,54 @@ a {
     padding-top: 39px;
 }
 
-.contact_top__heading {
+.contact-us {
+    margin-top: 54px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+
+    background-image: url(img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-us__heading {
+    margin-bottom: 16px;
+
     font-weight: 500;
     font-size: 44px;
+    line-height: 74px;
     text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.contact-us__text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+.contact_content {
+    padding-top: 57px;
+    padding-bottom: 112px;
 }
 
 .contact {
     display: flex;
     justify-content: center;
+    margin-bottom: 96px;
+}
+
+.contact__send {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
 }
 
 .field {
@@ -375,7 +415,5 @@ a {
     .main_header__info {
         background-position: right 6%;
         background-size: 42%;
-        }
     }
-
 }
