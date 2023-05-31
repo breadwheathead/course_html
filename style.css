@@ -62,7 +62,11 @@ a {
     list-style-type: none;
 }
 
-/* INDEX TOP */
+.menu__item:hover {
+    transform: scale(1.1);
+}
+
+/* INDEX HEADER */
 
 .main_header {
     height: 768px;
@@ -115,6 +119,15 @@ a {
     background: #5A98D0;
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
     border-radius: 10px;
+}
+
+.main_header__link:hover {
+    color: #ffffffb6;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+}
+
+.main_header__link:active {
+    box-shadow: none;
 }
 
 /* INDEX CONTENT */
@@ -195,17 +208,11 @@ a {
 }
 
 .project__text__bottom {
-    position: absolute;
+    right: auto;
     top: 32px;
     left: 32px;
 
-    font-weight: 400;
     font-size: 28px;
-    line-height: 46px;
-    text-align: right;
-    letter-spacing: 0.05em;
-
-    color: #FFFFFF;
 }
 
 .project__second-line {
@@ -214,7 +221,11 @@ a {
     margin-top: 32px;
 }
 
-/* CONTACTS TOP */
+/* CONTACTS HEADER */
+
+.contact_header {
+    padding-top: 39px;
+}
 
 .contact_top__heading {
     font-weight: 500;
@@ -249,6 +260,7 @@ a {
     padding-bottom: 96px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .interested-to-work {
@@ -259,7 +271,7 @@ a {
     width: 340px;
     margin-bottom: 32px;
 
-    text-align: left;    
+    text-align: left;
 }
 
 .footer__link {
@@ -267,10 +279,18 @@ a {
     padding: 15px 80px;
 
     text-align: center;
-    letter-spacing: 0.04em;    
+    letter-spacing: 0.04em;
     opacity: 1.0;
 
     background: #5A98D0;
+}
+
+.footer__link:hover {
+    background-color: #5c7faa;
+}
+
+.footer__link:active {
+    background-color: #476fa2;
 }
 
 .footer__line {
@@ -289,7 +309,48 @@ a {
     list-style-type: none;
 }
 
+.footer__li {
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 32px;
+}
+
+.footer__li:first-child {
+    display: block;
+
+}
+
+.footer__li:last-child {
+    margin-right: 0;
+}
+
+.footer__li:first-child:before {
+    content: "About: ";
+    display: block;
+    margin-right: 16px;   
+}
+
+.footer__li:nth-child(2):after {
+    content: "Phone: ";
+    display: block;
+    margin-right: 16px;   
+}
+
+.footer__li:last-child:after {
+    content: "Sourse: ";
+    display: block;
+    margin-right: 16px;    
+}
+
 .rights {
     margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rights p {
     opacity: 0.4;
 }
