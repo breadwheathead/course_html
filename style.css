@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     font-family: sans-serif;
@@ -38,12 +44,6 @@ a {
 
     color: #1F3F68;
     opacity: 0.6;
-}
-
-.sub_heading {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
 }
 
 .common_heading {
@@ -270,6 +270,8 @@ a {
     opacity: 1;
 }
 
+/* CONTACT CONTENT */
+
 .contact_content {
     padding-top: 57px;
     padding-bottom: 112px;
@@ -281,17 +283,86 @@ a {
     margin-bottom: 96px;
 }
 
+.sub_heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #1F3F68;
+}
+
+.contact__info {
+    flex-grow: 1;
+}
+
 .contact__send {
+    flex-grow: 1;
+    padding: 56px;
+
     background: #FFFFFF;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
 }
 
+.form_heading {
+    margin-bottom: 48px;
+}
+
+.field-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.field-name {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+
+    color: #1F3F68;
+    opacity: 0.8;
+}
+
 .field {
+    padding: 21px 42px;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+
+    color: #1F3F68;   
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+}
+
+.field:focus {
+    opacity: 1;
+}
+
+.contact__send__link {
+    display: block;
+    margin-top: 72px;
+    padding: 23px 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
 }
 
 /* FOOTER */

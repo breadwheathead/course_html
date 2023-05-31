@@ -45,7 +45,7 @@
                         <img src="img/contact.svg" alt="contact-info">
                         <h4 class="sub_heading">Address</h4>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h4>Phone</h4>
+                        <h4 class="sub_heading">Phone</h4>
                         <ul>
                             <li>(800) 285-7772 (United States)</li>
                             <li>(425) 706-4400 (International)</li>
@@ -64,14 +64,21 @@
                         <p class="text">phone 3</p>
                     </div>
                     <div class="contact__send">
-                        <h4 class="sub_heading">Send us message</h4>
+                        <h4 class="sub_heading form_heading">Send us message</h4>
                         <form action="#">
-                            Full name <input class="fiels" type="text" placeholder="Ivan Ivanov"><br>
-                            Email <input class="fiels" type="email" placeholder="email@email.com"><br>
-                            <label for="msg">Message</label><br>
-                            <textarea class="fiels" name="" id="msg" cols="30" rows="10"></textarea><br>
-                            <button class="btn_submit" type="submit">submit</button>
-                            <br>
+                            <div class="field-block">
+                                <label for="full-name" class="field-name">Full Name</label>
+                                <input class="field" type="text" placeholder="Your name" id="full-name">
+                            </div>
+                            <div class="field-block">
+                                <label for="email" class="field-name">Email</label>
+                                <input class="field" type="email" placeholder="Your email" id="email">
+                            </div>
+                            <div class="field-block">
+                                <label for="msg" class="field-name">Message</label>
+                                <textarea class="field" placeholder="Your message" id="msg" cols="30" rows="5"></textarea>
+                            </div>
+                            <a href="#" class="contact__send__link">submit</a>
                         </form>
                     </div>
                 </div>
