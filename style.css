@@ -84,7 +84,7 @@ a {
 /* INDEX HEADER */
 
 .main_header {
-    height: 768px;
+    min-height: 768px;
 
     padding-top: 39px;
     margin-bottom: 64px;
@@ -93,19 +93,21 @@ a {
 }
 
 .main_header__column {
-    height: 100%;
+    /* height: 100%; */
 
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .main_header__info {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    height: 100%;
 
     margin-top: 115px;
 
     background-image: url(img/bg.svg);
     background-repeat: no-repeat;
+    background-size: 50%;
     background-position: right 20%;
 }
 
@@ -132,6 +134,7 @@ a {
 .main_header__link {
     display: inline-block;
 
+    margin-bottom: 140px;
     padding: 15px 50px;
 
     text-align: center;
@@ -525,14 +528,19 @@ a {
         padding-right: 32px;
     }
 
-    .main_content {
-        padding-bottom: 90px;
-    }
+    /* INDEX HEADER */
 
     .main_header__info {
-        background-position: right 186px;
-        background-size: 50%;
+        margin-top: 90px;
+
+        background-position: right 150px;
     }
+
+    .main_header__text {
+        width: 50%;
+    }
+
+    /* INDEX CONTENT */
 
     .cards {
         flex-direction: column;
@@ -548,6 +556,10 @@ a {
 
     .card__mr {
         margin-right: 0;
+    }
+
+    .footer {
+        margin-top: 58px;
     }
 
     .footer__top {
@@ -580,8 +592,10 @@ a {
         line-height: 28px;
     }
 
+    /* INDEX HEADER */
+
     .main_header {
-        height: 376px;
+        min-height: 376px;
 
         padding-top: 24px;
         padding-bottom: 41px;
@@ -590,6 +604,7 @@ a {
     .main_header__info {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         margin-top: 36px;
 
@@ -597,24 +612,30 @@ a {
     }
 
     .main_header__heading {
-        width: 100%;
-
-        margin-bottom: 12px;
+        width: 100%;        
 
         font-size: 32px;
         line-height: 37px;
+        text-align: center;
     }
 
     .main_header__text {
         width: 100%;
+
+        margin-bottom: 39px;
+
+        text-align: center;
     }
 
     .main_header__link {
+        margin-bottom: 12px;
         padding: 0 8px;
 
         font-size: 12px;
         line-height: 26px;
     }
+
+    /* INDEX CONTENT */
 
     .main_content {
         padding-top: 48px;
