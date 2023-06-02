@@ -1,6 +1,18 @@
+/* Project course_html */
+
+/* 
+Important levels:
+1. width, hight 
+2. display or position
+3. margin, padding
+4. font
+5. color
+6. background
+*/
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 *,
@@ -21,6 +33,7 @@ a {
 
 .wrapper {
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
 }
@@ -31,6 +44,7 @@ a {
 
 .container {
     max-width: 1140px;
+
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -59,6 +73,7 @@ a {
 .menu {
     display: flex;
     justify-content: space-between;
+
     list-style-type: none;
 }
 
@@ -70,19 +85,24 @@ a {
 
 .main_header {
     height: 768px;
+
     padding-top: 39px;
+
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
 .main_header__column {
+    height: 100%;
+
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .main_header__info {
     flex-grow: 1;
+
     margin-top: 115px;
+
     background-image: url(img/bg.svg);
     background-repeat: no-repeat;
     background-position: right 20%;
@@ -90,6 +110,7 @@ a {
 
 .main_header__heading {
     width: 512px;
+
     margin-bottom: 32px;
 
     font-style: normal;
@@ -103,18 +124,20 @@ a {
 
 .main_header__text {
     width: 425px;
+
     margin-bottom: 71px;
 }
 
 .main_header__link {
     display: inline-block;
+
     padding: 15px 50px;
 
     text-align: center;
     letter-spacing: 0.04em;
-    opacity: 1;
 
     color: #FFFFFF;
+    opacity: 1;
     background: #5A98D0;
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
     border-radius: 10px;
@@ -139,6 +162,7 @@ a {
 .cards {
     display: flex;
     justify-content: space-between;
+
     margin-top: 64px;
     margin-bottom: 64px;
 }
@@ -146,10 +170,11 @@ a {
 .card {
     width: 359px;
     min-height: 480px;
-    padding: 32px 44px;
-    /* box-sizing: border-box; */
+
     display: flex;
     flex-direction: column;
+
+    padding: 32px 44px;
 
     background: #FFFFFF;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
@@ -161,8 +186,9 @@ a {
 }
 
 .card__img {
-    margin-bottom: 51px;
     align-self: center;
+
+    margin-bottom: 51px;
 }
 
 .card__heading {
@@ -170,6 +196,7 @@ a {
 
     font-size: 20px;
     line-height: 30px;
+
     color: #1F3F68;
 }
 
@@ -185,6 +212,7 @@ a {
 
 .our__text {
     width: 75%;
+
     margin: 32px auto 64px;
 
     text-align: center;
@@ -195,7 +223,9 @@ a {
 
 .project {
     position: relative;
+
     flex-grow: 1;
+
     margin-bottom: 32px;
 }
 
@@ -222,9 +252,9 @@ a {
 }
 
 .project__text__bottom {
-    right: auto;
-    top: 32px;
     left: 32px;
+    top: 32px;
+    right: auto;
 
     font-size: 28px;
 }
@@ -241,10 +271,12 @@ a {
 }
 
 .contact-us {
+    width: 100%;
+
     margin-top: 54px;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 100%;
+
 
     background-image: url(img/contact-bg.png);
     background-repeat: no-repeat;
@@ -283,6 +315,7 @@ a {
 .contact {
     display: flex;
     justify-content: center;
+
     margin-bottom: 96px;
 }
 
@@ -302,6 +335,7 @@ a {
 
 .contact__send {
     flex-grow: 1;
+
     padding: 56px;
 
     background: #FFFFFF;
@@ -316,6 +350,7 @@ a {
 .field-block {
     display: flex;
     flex-direction: column;
+
     margin-bottom: 32px;
 }
 
@@ -341,7 +376,6 @@ a {
 
     color: #1F3F68;
     border: 1px solid #356EAD;
-    /* box-sizing: border-box; */
     border-radius: 10px;
     opacity: 0.4;
 }
@@ -352,6 +386,7 @@ a {
 
 .contact__send__link {
     display: block;
+
     margin-top: 72px;
     padding: 23px 0;
 
@@ -376,19 +411,23 @@ a {
 
 .footer__text {
     width: 495px;
+    
     color: #FFFFFF;
 }
 
 .footer__top {
-    padding-top: 91px;
-    padding-bottom: 96px;
     display: flex;
     justify-content: space-between;
+
+    padding-top: 91px;
+    padding-bottom: 96px;
+
     align-items: center;
 }
 
 .footer__heading {
     width: 340px;
+
     margin-bottom: 32px;
 
     text-align: left;
@@ -396,6 +435,7 @@ a {
 
 .footer__link {
     display: block;
+
     padding: 15px 80px;
 
     text-align: center;
@@ -423,17 +463,12 @@ a {
     padding-bottom: 64px;
 }
 
-.footer__info {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
 .footer__li {
     flex-grow: 1;
     flex-basis: 33.3333%;
-    /* flex-direction: row-reverse; */
+
     display: flex;
+
     margin-bottom: 24px;
     margin-right: 32px;
 
@@ -467,17 +502,17 @@ a {
 }
 
 .rights {
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 
+    margin-top: 40px;
 }
 
 .rights p {
     opacity: 0.4;
 }
 
-/* MEDIA */
+/* MEDIA TABLET 1024px */
 
 @media (max-width: 1024px) {
     .container {
@@ -495,10 +530,11 @@ a {
     }
 
     .cards {
-        margin-top: 32px;
-        margin-bottom: 32px;
         flex-direction: column;
         align-items: center;
+
+        margin-top: 32px;
+        margin-bottom: 32px;
     }
 
     .card {
@@ -531,6 +567,8 @@ a {
     }
 }
 
+/* MEDIA PHONE 652px */
+
 @media (max-width: 652px) {
     .common_heading {
         font-size: 24px;
@@ -539,6 +577,7 @@ a {
 
     .main_header {
         height: 376px;
+
         padding-top: 24px;
         padding-bottom: 41px;
     }
@@ -546,15 +585,19 @@ a {
     .main_header__info {
         display: flex;
         flex-direction: column;
+
         margin-top: 36px;
+
         background: none;
     }
 
     .main_header__heading {
         width: 100%;
+
+        margin-bottom: 12px;
+
         font-size: 32px;
         line-height: 37px;
-        margin-bottom: 12px;
     }
 
     .main_header__text {
@@ -562,9 +605,10 @@ a {
     }
 
     .main_header__link {
+        padding: 0 8px;
+
         font-size: 12px;
         line-height: 26px;
-        padding: 0 8px;
     }
 
     .main_content {
@@ -588,8 +632,8 @@ a {
     }
 
     .project__text__bottom {
-        right: auto;
         left: 16px;
+        right: auto;
     }
 
     .project__second-line {
@@ -603,13 +647,16 @@ a {
     .footer__top {
         display: flex;
         flex-direction: column;
+
         padding-top: 18px;
         padding-bottom: 41px;
     }
 
     .footer__text {
         width: 100%;
+
         margin-bottom: 40px;
+
         text-align: center;
     }
 
