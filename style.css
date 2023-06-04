@@ -31,6 +31,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .wrapper {
     min-height: 100vh;
 
@@ -73,8 +77,6 @@ a {
 .menu {
     display: flex;
     justify-content: space-between;
-
-    list-style-type: none;
 }
 
 .menu li a img:hover {
@@ -260,10 +262,11 @@ a {
 /* CONTACTS HEADER */
 
 .contact_header {
-    padding-top: 39px;
+    margin-bottom: 57px;
+    padding-top: 37px;
 }
 
-.contact-us {
+.contact_us {
     width: 100%;
 
     margin-top: 54px;
@@ -276,7 +279,8 @@ a {
     background-size: cover;
 }
 
-.contact-us__heading {
+.contact_us__heading {
+
     margin-bottom: 16px;
 
     font-weight: 500;
@@ -288,7 +292,11 @@ a {
     color: #FFFFFF;
 }
 
-.contact-us__text {
+.contact_us__text {
+    width: 75%;
+
+    margin: 0 auto;
+
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -300,10 +308,7 @@ a {
 
 /* CONTACT CONTENT */
 
-.contact_content {
-    padding-top: 57px;
-    padding-bottom: 112px;
-}
+.contact_content {}
 
 .contact {
     display: flex;
@@ -313,6 +318,8 @@ a {
 }
 
 .sub_heading {
+    margin-bottom: 24px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -323,11 +330,27 @@ a {
 }
 
 .contact__info {
-    flex-grow: 1;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 78px;
+    padding-right: 100px;
+}
+
+.contact__info__img {
+    width: 100%;
+
+    margin-bottom: 68px;
+}
+
+.contact__info__item {
+    margin-bottom: 40px;
 }
 
 .contact__send {
-    flex-grow: 1;
+    max-width: 540px;
 
     padding: 56px;
 
@@ -336,18 +359,22 @@ a {
     border-radius: 10px;
 }
 
-.form_heading {
+.contact__send>.sub_heading {
     margin-bottom: 48px;
 }
 
-.field-block {
+.text_mb {
+    margin-bottom: 16px;
+}
+
+.field_block {
     display: flex;
     flex-direction: column;
 
     margin-bottom: 32px;
 }
 
-.field-name {
+.field_name {
     margin-bottom: 8px;
 
     font-weight: 400;
@@ -556,6 +583,37 @@ a {
 
     .project__text__bottom {
         font-size: 21px;
+    }
+
+    /* CONTACT HEADER */
+
+    .contact_header {
+        margin-bottom: 71px;
+        padding-top: 15px;
+    }
+
+    .contact_us {
+        margin-top: 46px;
+        padding-bottom: 25px;
+    }
+
+    /* CONTACT CONTENT */
+
+    .contact_content {}
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 64px;
+    }
+
+    .contact__info {
+        margin-bottom: 24px;
+    }
+
+    .map {
+        padding: 0;
     }
 
     /* FOOTER */
