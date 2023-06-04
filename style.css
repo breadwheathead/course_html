@@ -281,7 +281,7 @@ ul {
 
 .contact_us__heading {
 
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 
     font-weight: 500;
     font-size: 44px;
@@ -347,6 +347,10 @@ ul {
 
 .contact__info__item {
     margin-bottom: 40px;
+}
+
+.contact__info__item:last-child {
+    margin-bottom: 0;
 }
 
 .contact__send {
@@ -565,12 +569,14 @@ ul {
         flex-direction: column;
         align-items: center;
 
-        margin-top: 32px;
+        margin-top: 64px;
         margin-bottom: 32px;
     }
 
     .card {
         margin-bottom: 32px;
+
+        padding-bottom: 26px;
     }
 
     .card__mr {
@@ -609,7 +615,8 @@ ul {
     }
 
     .contact__info {
-        margin-bottom: 24px;
+        margin-bottom: 64px;
+        padding-top: 0;
     }
 
     .map {
@@ -651,6 +658,11 @@ ul {
 /* MEDIA PHONE 652px */
 
 @media (max-width: 652px) {
+    .container {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
     .common_heading {
         font-size: 24px;
         line-height: 28px;
@@ -701,12 +713,10 @@ ul {
 
     /* INDEX CONTENT */
 
-    .main_content {
-        padding-top: 48px;
-    }
-
     .card {
         width: 100%;
+        margin-bottom: 21px;
+        padding-bottom: 21px;
     }
 
     .our__text {
@@ -732,6 +742,49 @@ ul {
 
     .project__mr {
         margin-right: 0;
+    }
+
+    /* CONTACT HEADER */
+
+    .contact_header {
+        margin-bottom: 54px;
+    }
+
+    .contact_us {
+        margin-top: 30px;
+        padding-top: 48px;
+        padding-bottom: 61px;
+
+    }
+
+    .contact_us__heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contact_us__text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* CONTACT CONTENT */
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__info {
+        max-width: 300px;
+
+        margin-bottom: 32px;
+        padding-right: 0;
+    }
+
+    .contact__send {
+        max-width: 343px;
     }
 
     /* FOOTER */
